@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   
+<p>Time</p>
+<p id="time"></p>
+
+<button onclick="myStopFunction()">Stop time</button>
+
+<script>
+let myTime = setInterval(myTimer, 1000);
+function myTimer() {
+let d = new Date();
+let t = d.toLocaleTimeString();
+document.getElementById("time").innerHTML = t;
+}
+
+
+function myStopFunction() {
+clearInterval(myTime);
+}
+
+
+const numbers = [4, 5, 8, 7,9]
+ numbers.forEach ( (el) => {
+   console.log(el)
+ })
+ 
+
+const sum = numbers.reduce((acc, el) => acc + el, 0)
+console.log(sum)
+
+</script>
+
+
+
+
+
+</body>
+</html>
